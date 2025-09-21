@@ -1,0 +1,40 @@
+Symbol Table
+Name                 Type            Line      
+----------------------------------------
+0                    int             32        
+56                   int             26        
+45                   int             25        
+>                    int             25        
+3                    int             25        
+12                   int             21        
+7                    int             18        
+10                   int             17        
+<                    int             17        
+67                   int             15        
+x                    int             15        
+"I am currently pursuing my B.Tech. from IIT Guwahati" char            14        
+intro2               char            14        
+"Hello my name is Kashish Aggarwal" char            13        
+intro1               char            13        
+*                    char            13        
+4                    int             12        
+lo                   int             12        
+5                    int             11        
+yo                   int             11        
+'z'                  char            10        
+=                    char            10        
+ch                   char            10        
+char                 char            10        
+main                 int             8         
+}                    int             6         
+;                    int             5         
+,                    int             5         
+"%d"                 int             5         
+printf               int             5         
+{                    int             4         
+)                    int             4         
+a                    int             4         
+int                  int             4         
+(                    void            4         
+print                void            4         
+void                 void            4         

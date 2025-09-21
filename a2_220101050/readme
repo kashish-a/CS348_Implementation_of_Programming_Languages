@@ -1,0 +1,17 @@
+Prerequisites
+Ensure that nasm, gcc, and make are installed on your system.
+
+How to Run
+Build the executables: Run the following command to compile the assembly files and create executables:
+make
+
+Run the executables: You can run each program using the following commands:
+To run 220101050_A2_14a.asm , you would have to run the following commands
+-> nasm -f elf32 -o 220101050_A2_14a.o 220101050_A2_14a.asm
+-> ld -m elf_i386 -o 220101050_A2_14a 220101050_A2_14a.o
+-> ./220101050_A2_14a
+
+To run 220101050_A2_6b.asm , you would have to run the following commands
+-> nasm -f elf32 -o 220101050_A2_6b.o 220101050_A2_6b.asm
+-> gcc -m32 -o 220101050_A2_6b 220101050_A2_6b.o
+-> ./220101050_A2_6b

@@ -1,0 +1,1662 @@
+............. Starting the parsing process .............
+
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (add)
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: parameter_declaration -> type_specifier pointer_opt identifier
+Reduced: parameter_list -> parameter_declaration
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: parameter_declaration -> type_specifier pointer_opt identifier
+Reduced: parameter_list -> parameter_list , parameter_declaration
+Reduced: parameter_list_opt -> parameter_list
+Reduced: direct_declarator -> identifier ( parameter_list_opt )
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression + multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: jump_statement -> RETURN expression_opt SEMICOLON
+Reduced: statement -> jump_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: function_definition -> type_specifier declarator compound_statement
+Reduced: external_declaration -> function_definition
+Reduced: translation_unit -> external_declaration
+Reduced: type_specifier -> FLOAT
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (calculateAverage)
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (x)
+Reduced: parameter_declaration -> type_specifier pointer_opt identifier
+Reduced: parameter_list -> parameter_declaration
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (y)
+Reduced: parameter_declaration -> type_specifier pointer_opt identifier
+Reduced: parameter_list -> parameter_list , parameter_declaration
+Reduced: parameter_list_opt -> parameter_list
+Reduced: direct_declarator -> identifier ( parameter_list_opt )
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: type_specifier -> FLOAT
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: direct_declarator -> identifier (result)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (x)
+Reduced: primary_expression -> identifier (x)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: identifier -> IDENTIFIER (y)
+Reduced: primary_expression -> identifier (y)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression + multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: primary_expression -> ( expression )
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: primary_expression -> FLOAT_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression / unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: jump_statement -> RETURN expression_opt SEMICOLON
+Reduced: statement -> jump_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: function_definition -> type_specifier declarator compound_statement
+Reduced: external_declaration -> function_definition
+Reduced: translation_unit -> translation_unit external_declaration
+Reduced: type_specifier -> CHAR
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (getFirstChar)
+Reduced: type_specifier -> CHAR
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (c)
+Reduced: parameter_declaration -> type_specifier pointer_opt identifier
+Reduced: parameter_list -> parameter_declaration
+Reduced: parameter_list_opt -> parameter_list
+Reduced: direct_declarator -> identifier ( parameter_list_opt )
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: identifier -> IDENTIFIER (c)
+Reduced: primary_expression -> identifier (c)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: jump_statement -> RETURN expression_opt SEMICOLON
+Reduced: statement -> jump_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: function_definition -> type_specifier declarator compound_statement
+Reduced: external_declaration -> function_definition
+Reduced: translation_unit -> translation_unit external_declaration
+Reduced: type_specifier -> VOID
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (printMessage)
+Reduced: parameter_list_opt -> epsilon
+Reduced: direct_declarator -> identifier ( parameter_list_opt )
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: expression_opt -> epsilon
+Reduced: jump_statement -> RETURN expression_opt SEMICOLON
+Reduced: statement -> jump_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: function_definition -> type_specifier declarator compound_statement
+Reduced: external_declaration -> function_definition
+Reduced: translation_unit -> translation_unit external_declaration
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (main)
+Reduced: parameter_list_opt -> epsilon
+Reduced: direct_declarator -> identifier ( parameter_list_opt )
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: direct_declarator -> identifier (a)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: direct_declarator -> identifier (b)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: direct_declarator -> identifier (result)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> FLOAT
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (f1)
+Reduced: direct_declarator -> identifier (f1)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> FLOAT
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (f2)
+Reduced: direct_declarator -> identifier (f2)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> CHAR
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (c)
+Reduced: direct_declarator -> identifier (c)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (arr)
+Reduced: direct_declarator -> identifier [ INTEGER_CONSTANT ]
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (f1)
+Reduced: primary_expression -> identifier (f1)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> FLOAT_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (f2)
+Reduced: primary_expression -> identifier (f2)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> FLOAT_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (c)
+Reduced: primary_expression -> identifier (c)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> CHARACTER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression + multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression - multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression * unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression / unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression 1nary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_operator -> -
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_expression -> unary_operator unary_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_operator -> +
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_expression -> unary_operator unary_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression + multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression - multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> relational_expression > additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: selection_statement -> IF ( expression ) statement ELSE statement
+Reduced: statement -> selection_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> equality_expression == relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> equality_expression == relational_expression
+Reduced: logical_and_expression -> logical_and_expression && equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: selection_statement -> IF ( expression ) statement
+Reduced: statement -> selection_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> equality_expression == relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> equality_expression == relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_or_expression || logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: selection_statement -> IF ( expression ) statement
+Reduced: statement -> selection_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> relational_expression > additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: primary_expression -> ( expression )
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: conditional_expression -> logical_or_expression ? expression : conditional_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: direct_declarator -> identifier (i)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> relational_expression < additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> additive_expression + multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: identifier -> IDENTIFIER (arr)
+Reduced: primary_expression -> identifier (arr)
+Reduced: postfix_expression -> primary_expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: postfix_expression -> postfix_expression [ expression ]
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression * unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: iteration_statement -> FOR ( expression_opt ; expression_opt ; expression_opt ) statement
+Reduced: statement -> iteration_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (i)
+Reduced: primary_expression -> identifier (i)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> epsilon
+Reduced: identifier -> IDENTIFIER (localVar)
+Reduced: direct_declarator -> identifier (localVar)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item
+Reduced: identifier -> IDENTIFIER (localVar)
+Reduced: primary_expression -> identifier (localVar)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (localVar)
+Reduced: primary_expression -> identifier (localVar)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: primary_expression -> INTEGER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> multiplicative_expression * unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: statement -> compound_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (add)
+Reduced: primary_expression -> identifier (add)
+Reduced: postfix_expression -> primary_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: argument_expression_list -> assignment_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: argument_expression_list -> argument_expression_list , assignment_expression
+Reduced: argument_expression_list_opt -> argument_expression_list
+Reduced: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (f2)
+Reduced: primary_expression -> identifier (f2)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (calculateAverage)
+Reduced: primary_expression -> identifier (calculateAverage)
+Reduced: postfix_expression -> primary_expression
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: argument_expression_list -> assignment_expression
+Reduced: identifier -> IDENTIFIER (b)
+Reduced: primary_expression -> identifier (b)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: argument_expression_list -> argument_expression_list , assignment_expression
+Reduced: argument_expression_list_opt -> argument_expression_list
+Reduced: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (c)
+Reduced: primary_expression -> identifier (c)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: identifier -> IDENTIFIER (getFirstChar)
+Reduced: primary_expression -> identifier (getFirstChar)
+Reduced: postfix_expression -> primary_expression
+Reduced: primary_expression -> CHARACTER_CONSTANT
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: argument_expression_list -> assignment_expression
+Reduced: argument_expression_list_opt -> argument_expression_list
+Reduced: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (printMessage)
+Reduced: primary_expression -> identifier (printMessage)
+Reduced: postfix_expression -> primary_expression
+Reduced: argument_expression_list_opt -> epsilon
+Reduced: postfix_expression -> postfix_expression ( argument_expression_list_opt )
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: type_specifier -> INTEGER
+Reduced: pointer_opt -> '*'
+Reduced: identifier -> IDENTIFIER (ptr)
+Reduced: direct_declarator -> identifier (ptr)
+Reduced: declarator -> pointer_opt direct_declarator
+Reduced: init_declarator -> declarator
+Reduced: declaration -> type_specifier init_declarator SEMICOLON
+Reduced: block_item -> declaration
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (ptr)
+Reduced: primary_expression -> identifier (ptr)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_operator -> &
+Reduced: identifier -> IDENTIFIER (a)
+Reduced: primary_expression -> identifier (a)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_expression -> unary_operator unary_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_operator -> *
+Reduced: identifier -> IDENTIFIER (ptr)
+Reduced: primary_expression -> identifier (ptr)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: unary_expression -> unary_operator unary_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: assignment_expression -> unary_expression ASSIGN assignment_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: expression_statement -> expression_opt SEMICOLON
+Reduced: statement -> expression_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: identifier -> IDENTIFIER (result)
+Reduced: primary_expression -> identifier (result)
+Reduced: postfix_expression -> primary_expression
+Reduced: unary_expression -> postfix_expression
+Reduced: multiplicative_expression -> unary_expression
+Reduced: additive_expression -> multiplicative_expression
+Reduced: relational_expression -> additive_expression
+Reduced: equality_expression -> relational_expression
+Reduced: logical_and_expression -> equality_expression
+Reduced: logical_or_expression -> logical_and_expression
+Reduced: conditional_expression -> logical_or_expression
+Reduced: assignment_expression -> conditional_expression
+Reduced: expression -> assignment_expression
+Reduced: expression_opt -> expression
+Reduced: jump_statement -> RETURN expression_opt SEMICOLON
+Reduced: statement -> jump_statement
+Reduced: block_item -> statement
+Reduced: block_item_list -> block_item_list block_item
+Reduced: block_item_list -> block_item_list
+Reduced: compound_statement -> BLOCK_BEGIN block_item_list_opt BLOCK_END
+Reduced: function_definition -> type_specifier declarator compound_statement
+Reduced: external_declaration -> function_definition
+Reduced: translation_unit -> translation_unit external_declaration
+
+============= SYMBOL TABLE =============
+Name                 Type            Line No 
+----------------------------------------
+integer              KEYWORD         2         
+add                  IDENTIFIER      2         
+(                    PUNCTUATOR      2         
+integer              KEYWORD         2         
+a                    IDENTIFIER      2         
+,                    PUNCTUATOR      2         
+integer              KEYWORD         2         
+b                    IDENTIFIER      2         
+)                    PUNCTUATOR      2         
+begin                KEYWORD         2         
+return               KEYWORD         3         
+a                    IDENTIFIER      3         
++                    PUNCTUATOR      3         
+b                    IDENTIFIER      3         
+;                    PUNCTUATOR      3         
+end                  KEYWORD         4         
+float                KEYWORD         6         
+calculateAverage     IDENTIFIER      6         
+(                    PUNCTUATOR      6         
+integer              KEYWORD         6         
+x                    IDENTIFIER      6         
+,                    PUNCTUATOR      6         
+integer              KEYWORD         6         
+y                    IDENTIFIER      6         
+)                    PUNCTUATOR      6         
+begin                KEYWORD         6         
+float                KEYWORD         7         
+result               IDENTIFIER      7         
+;                    PUNCTUATOR      7         
+result               IDENTIFIER      8         
+=                    PUNCTUATOR      8         
+(                    PUNCTUATOR      8         
+x                    IDENTIFIER      8         
++                    PUNCTUATOR      8         
+y                    IDENTIFIER      8         
+)                    PUNCTUATOR      8         
+/                    PUNCTUATOR      8         
+2.0                  FLOAT_CONSTANT  8         
+;                    PUNCTUATOR      8         
+return               KEYWORD         9         
+result               IDENTIFIER      9         
+;                    PUNCTUATOR      9         
+end                  KEYWORD         10        
+char                 KEYWORD         12        
+getFirstChar         IDENTIFIER      12        
+(                    PUNCTUATOR      12        
+char                 KEYWORD         12        
+c                    IDENTIFIER      12        
+)                    PUNCTUATOR      12        
+begin                KEYWORD         12        
+return               KEYWORD         13        
+c                    IDENTIFIER      13        
+;                    PUNCTUATOR      13        
+end                  KEYWORD         14        
+void                 KEYWORD         16        
+printMessage         IDENTIFIER      16        
+(                    PUNCTUATOR      16        
+)                    PUNCTUATOR      16        
+begin                KEYWORD         16        
+return               KEYWORD         18        
+;                    PUNCTUATOR      18        
+end                  KEYWORD         19        
+integer              KEYWORD         22        
+main                 IDENTIFIER      22        
+(                    PUNCTUATOR      22        
+)                    PUNCTUATOR      22        
+begin                KEYWORD         22        
+integer              KEYWORD         24        
+a                    IDENTIFIER      24        
+;                    PUNCTUATOR      24        
+integer              KEYWORD         25        
+b                    IDENTIFIER      25        
+;                    PUNCTUATOR      25        
+integer              KEYWORD         26        
+result               IDENTIFIER      26        
+;                    PUNCTUATOR      26        
+float                KEYWORD         27        
+f1                   IDENTIFIER      27        
+;                    PUNCTUATOR      27        
+float                KEYWORD         28        
+f2                   IDENTIFIER      28        
+;                    PUNCTUATOR      28        
+char                 KEYWORD         29        
+c                    IDENTIFIER      29        
+;                    PUNCTUATOR      29        
+integer              KEYWORD         30        
+arr                  IDENTIFIER      30        
+[                    PUNCTUATOR      30        
+10                   INTEGER_CONSTANT 30        
+]                    PUNCTUATOR      30        
+;                    PUNCTUATOR      30        
+a                    IDENTIFIER      33        
+=                    PUNCTUATOR      33        
+10                   INTEGER_CONSTANT 33        
+;                    PUNCTUATOR      33        
+b                    IDENTIFIER      34        
+=                    PUNCTUATOR      34        
+20                   INTEGER_CONSTANT 34        
+;                    PUNCTUATOR      34        
+f1                   IDENTIFIER      35        
+=                    PUNCTUATOR      35        
+3.14                 FLOAT_CONSTANT  35        
+;                    PUNCTUATOR      35        
+f2                   IDENTIFIER      36        
+=                    PUNCTUATOR      36        
+2.71                 FLOAT_CONSTANT  36        
+;                    PUNCTUATOR      36        
+c                    IDENTIFIER      37        
+=                    PUNCTUATOR      37        
+'A'                  CHARACTER_CONSTANT 37        
+;                    PUNCTUATOR      37        
+result               IDENTIFIER      40        
+=                    PUNCTUATOR      40        
+a                    IDENTIFIER      40        
++                    PUNCTUATOR      40        
+b                    IDENTIFIER      40        
+;                    PUNCTUATOR      40        
+result               IDENTIFIER      41        
+=                    PUNCTUATOR      41        
+a                    IDENTIFIER      41        
+-                    PUNCTUATOR      41        
+b                    IDENTIFIER      41        
+;                    PUNCTUATOR      41        
+result               IDENTIFIER      42        
+=                    PUNCTUATOR      42        
+a                    IDENTIFIER      42        
+*                    PUNCTUATOR      42        
+b                    IDENTIFIER      42        
+;                    PUNCTUATOR      42        
+result               IDENTIFIER      43        
+=                    PUNCTUATOR      43        
+a                    IDENTIFIER      43        
+/                    PUNCTUATOR      43        
+b                    IDENTIFIER      43        
+;                    PUNCTUATOR      43        
+result               IDENTIFIER      44        
+=                    PUNCTUATOR      44        
+a                    IDENTIFIER      44        
+%                    PUNCTUATOR      44        
+b                    IDENTIFIER      44        
+;                    PUNCTUATOR      44        
+result               IDENTIFIER      47        
+=                    PUNCTUATOR      47        
+-                    PUNCTUATOR      47        
+a                    IDENTIFIER      47        
+;                    PUNCTUATOR      47        
+result               IDENTIFIER      48        
+=                    PUNCTUATOR      48        
++                    PUNCTUATOR      48        
+a                    IDENTIFIER      48        
+;                    PUNCTUATOR      48        
+a                    IDENTIFIER      51        
+=                    PUNCTUATOR      51        
+a                    IDENTIFIER      51        
++                    PUNCTUATOR      51        
+1                    INTEGER_CONSTANT 51        
+;                    PUNCTUATOR      51        
+b                    IDENTIFIER      52        
+=                    PUNCTUATOR      52        
+b                    IDENTIFIER      52        
+-                    PUNCTUATOR      52        
+1                    INTEGER_CONSTANT 52        
+;                    PUNCTUATOR      52        
+if                   KEYWORD         55        
+(                    PUNCTUATOR      55        
+a                    IDENTIFIER      55        
+>                    PUNCTUATOR      55        
+b                    IDENTIFIER      55        
+)                    PUNCTUATOR      55        
+begin                KEYWORD         55        
+result               IDENTIFIER      56        
+=                    PUNCTUATOR      56        
+a                    IDENTIFIER      56        
+;                    PUNCTUATOR      56        
+end                  KEYWORD         57        
+else                 KEYWORD         57        
+begin                KEYWORD         57        
+result               IDENTIFIER      58        
+=                    PUNCTUATOR      58        
+b                    IDENTIFIER      58        
+;                    PUNCTUATOR      58        
+end                  KEYWORD         59        
+if                   KEYWORD         61        
+(                    PUNCTUATOR      61        
+a                    IDENTIFIER      61        
+==                   PUNCTUATOR      61        
+10                   INTEGER_CONSTANT 61        
+&&                   PUNCTUATOR      61        
+b                    IDENTIFIER      61        
+==                   PUNCTUATOR      61        
+20                   INTEGER_CONSTANT 61        
+)                    PUNCTUATOR      61        
+begin                KEYWORD         61        
+result               IDENTIFIER      62        
+=                    PUNCTUATOR      62        
+1                    INTEGER_CONSTANT 62        
+;                    PUNCTUATOR      62        
+end                  KEYWORD         63        
+if                   KEYWORD         65        
+(                    PUNCTUATOR      65        
+a                    IDENTIFIER      65        
+==                   PUNCTUATOR      65        
+5                    INTEGER_CONSTANT 65        
+||                   PUNCTUATOR      65        
+b                    IDENTIFIER      65        
+==                   PUNCTUATOR      65        
+5                    INTEGER_CONSTANT 65        
+)                    PUNCTUATOR      65        
+begin                KEYWORD         65        
+result               IDENTIFIER      66        
+=                    PUNCTUATOR      66        
+0                    INTEGER_CONSTANT 66        
+;                    PUNCTUATOR      66        
+end                  KEYWORD         67        
+result               IDENTIFIER      70        
+=                    PUNCTUATOR      70        
+(                    PUNCTUATOR      70        
+a                    IDENTIFIER      70        
+>                    PUNCTUATOR      70        
+b                    IDENTIFIER      70        
+)                    PUNCTUATOR      70        
+?                    PUNCTUATOR      70        
+a                    IDENTIFIER      70        
+:                    PUNCTUATOR      70        
+b                    IDENTIFIER      70        
+;                    PUNCTUATOR      70        
+integer              KEYWORD         73        
+i                    IDENTIFIER      73        
+;                    PUNCTUATOR      73        
+for                  KEYWORD         74        
+(                    PUNCTUATOR      74        
+i                    IDENTIFIER      74        
+=                    PUNCTUATOR      74        
+0                    INTEGER_CONSTANT 74        
+;                    PUNCTUATOR      74        
+i                    IDENTIFIER      74        
+<                    PUNCTUATOR      74        
+10                   INTEGER_CONSTANT 74        
+;                    PUNCTUATOR      74        
+i                    IDENTIFIER      74        
+=                    PUNCTUATOR      74        
+i                    IDENTIFIER      74        
++                    PUNCTUATOR      74        
+1                    INTEGER_CONSTANT 74        
+)                    PUNCTUATOR      74        
+begin                KEYWORD         74        
+arr                  IDENTIFIER      75        
+[                    PUNCTUATOR      75        
+i                    IDENTIFIER      75        
+]                    PUNCTUATOR      75        
+=                    PUNCTUATOR      75        
+i                    IDENTIFIER      75        
+*                    PUNCTUATOR      75        
+i                    IDENTIFIER      75        
+;                    PUNCTUATOR      75        
+end                  KEYWORD         76        
+i                    IDENTIFIER      78        
+=                    PUNCTUATOR      78        
+0                    INTEGER_CONSTANT 78        
+;                    PUNCTUATOR      78        
+begin                KEYWORD         81        
+integer              KEYWORD         82        
+localVar             IDENTIFIER      82        
+;                    PUNCTUATOR      82        
+localVar             IDENTIFIER      83        
+=                    PUNCTUATOR      83        
+100                  INTEGER_CONSTANT 83        
+;                    PUNCTUATOR      83        
+result               IDENTIFIER      84        
+=                    PUNCTUATOR      84        
+localVar             IDENTIFIER      84        
+*                    PUNCTUATOR      84        
+2                    INTEGER_CONSTANT 84        
+;                    PUNCTUATOR      84        
+end                  KEYWORD         85        
+result               IDENTIFIER      88        
+=                    PUNCTUATOR      88        
+add                  IDENTIFIER      88        
+(                    PUNCTUATOR      88        
+a                    IDENTIFIER      88        
+,                    PUNCTUATOR      88        
+b                    IDENTIFIER      88        
+)                    PUNCTUATOR      88        
+;                    PUNCTUATOR      88        
+f2                   IDENTIFIER      89        
+=                    PUNCTUATOR      89        
+calculateAverage     IDENTIFIER      89        
+(                    PUNCTUATOR      89        
+a                    IDENTIFIER      89        
+,                    PUNCTUATOR      89        
+b                    IDENTIFIER      89        
+)                    PUNCTUATOR      89        
+;                    PUNCTUATOR      89        
+c                    IDENTIFIER      90        
+=                    PUNCTUATOR      90        
+getFirstChar         IDENTIFIER      90        
+(                    PUNCTUATOR      90        
+'X'                  CHARACTER_CONSTANT 90        
+)                    PUNCTUATOR      90        
+;                    PUNCTUATOR      90        
+printMessage         IDENTIFIER      91        
+(                    PUNCTUATOR      91        
+)                    PUNCTUATOR      91        
+;                    PUNCTUATOR      91        
+integer              KEYWORD         94        
+*                    PUNCTUATOR      94        
+ptr                  IDENTIFIER      94        
+;                    PUNCTUATOR      94        
+ptr                  IDENTIFIER      95        
+=                    PUNCTUATOR      95        
+&                    PUNCTUATOR      95        
+a                    IDENTIFIER      95        
+;                    PUNCTUATOR      95        
+result               IDENTIFIER      96        
+=                    PUNCTUATOR      96        
+*                    PUNCTUATOR      96        
+ptr                  IDENTIFIER      96        
+;                    PUNCTUATOR      96        
+return               KEYWORD         99        
+result               IDENTIFIER      99        
+;                    PUNCTUATOR      99        
+end                  KEYWORD         100       

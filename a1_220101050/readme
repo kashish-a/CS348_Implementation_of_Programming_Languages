@@ -1,0 +1,15 @@
+Prerequisites
+Ensure that nasm, gcc, and make are installed on your system.
+
+How to Run
+Build the executables: Run the following command to compile the assembly files and create executables:
+make
+
+Run the executables: You can run each program using the following commands:
+make run_saq9
+make run_saq13
+make run_sbq7
+make run_sbq10
+
+Clean up: To remove the object and executable files, run:
+make clean

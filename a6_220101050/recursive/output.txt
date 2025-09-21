@@ -1,0 +1,326 @@
+MICRO C LEXICAL ANALYZER (NON-ITERATIVE VERSION)
+===============================================
+
+<COMMENT, /*...*/>
+<KEYWORD, integer>
+<IDENTIFIER, isPrime>
+<PUNCTUATOR, (>
+<KEYWORD, integer>
+<IDENTIFIER, n>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, n>
+<PUNCTUATOR, <=>
+<INTEGER_CONSTANT, 1>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, n>
+<PUNCTUATOR, <=>
+<INTEGER_CONSTANT, 3>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 1>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, n>
+<PUNCTUATOR, %>
+<INTEGER_CONSTANT, 2>
+<PUNCTUATOR, ==>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ||>
+<IDENTIFIER, n>
+<PUNCTUATOR, %>
+<INTEGER_CONSTANT, 3>
+<PUNCTUATOR, ==>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, for>
+<PUNCTUATOR, (>
+<KEYWORD, integer>
+<IDENTIFIER, i>
+<PUNCTUATOR, =>
+<INTEGER_CONSTANT, 5>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, *>
+<IDENTIFIER, i>
+<PUNCTUATOR, <=>
+<IDENTIFIER, n>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, =>
+<IDENTIFIER, i>
+<PUNCTUATOR, +>
+<INTEGER_CONSTANT, 6>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, n>
+<PUNCTUATOR, %>
+<IDENTIFIER, i>
+<PUNCTUATOR, ==>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ||>
+<IDENTIFIER, n>
+<PUNCTUATOR, %>
+<PUNCTUATOR, (>
+<IDENTIFIER, i>
+<PUNCTUATOR, +>
+<INTEGER_CONSTANT, 2>
+<PUNCTUATOR, )>
+<PUNCTUATOR, ==>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, end>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 1>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, void>
+<IDENTIFIER, printPrimes>
+<PUNCTUATOR, (>
+<KEYWORD, integer>
+<IDENTIFIER, limit>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<COMMENT, //...>
+<STRING_LITERAL, "Prime numbers up to: ">
+<PUNCTUATOR, ;>
+<KEYWORD, integer>
+<IDENTIFIER, num>
+<PUNCTUATOR, ;>
+<IDENTIFIER, num>
+<PUNCTUATOR, =>
+<IDENTIFIER, limit>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<KEYWORD, for>
+<PUNCTUATOR, (>
+<KEYWORD, integer>
+<IDENTIFIER, i>
+<PUNCTUATOR, =>
+<INTEGER_CONSTANT, 2>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, <=>
+<IDENTIFIER, limit>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, ++>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, isPrime>
+<PUNCTUATOR, (>
+<IDENTIFIER, i>
+<PUNCTUATOR, )>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<COMMENT, //...>
+<KEYWORD, integer>
+<IDENTIFIER, temp>
+<PUNCTUATOR, =>
+<IDENTIFIER, i>
+<PUNCTUATOR, ;>
+<IDENTIFIER, temp>
+<PUNCTUATOR, =>
+<IDENTIFIER, temp>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<IDENTIFIER, temp>
+<PUNCTUATOR, =>
+<IDENTIFIER, temp>
+<PUNCTUATOR, +>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<KEYWORD, end>
+<KEYWORD, end>
+<KEYWORD, end>
+<COMMENT, //...>
+<KEYWORD, integer>
+<IDENTIFIER, main>
+<PUNCTUATOR, (>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, integer>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, ;>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, =>
+<INTEGER_CONSTANT, 50>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<COMMENT, //...>
+<KEYWORD, integer>
+<IDENTIFIER, count>
+<PUNCTUATOR, ;>
+<KEYWORD, float>
+<IDENTIFIER, percentage>
+<PUNCTUATOR, ;>
+<KEYWORD, char>
+<IDENTIFIER, separator>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<IDENTIFIER, count>
+<PUNCTUATOR, =>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<IDENTIFIER, percentage>
+<PUNCTUATOR, =>
+<FLOATING_CONSTANT, 0.0>
+<PUNCTUATOR, ;>
+<IDENTIFIER, separator>
+<PUNCTUATOR, =>
+<CHAR_CONSTANT, ','>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<STRING_LITERAL, "Prime Number Finder\n">
+<PUNCTUATOR, ;>
+<STRING_LITERAL, "==================\n">
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<IDENTIFIER, printPrimes>
+<PUNCTUATOR, (>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, )>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<KEYWORD, for>
+<PUNCTUATOR, (>
+<KEYWORD, integer>
+<IDENTIFIER, i>
+<PUNCTUATOR, =>
+<INTEGER_CONSTANT, 2>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, <=>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, ;>
+<IDENTIFIER, i>
+<PUNCTUATOR, ++>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<KEYWORD, if>
+<PUNCTUATOR, (>
+<IDENTIFIER, isPrime>
+<PUNCTUATOR, (>
+<IDENTIFIER, i>
+<PUNCTUATOR, )>
+<PUNCTUATOR, )>
+<KEYWORD, begin>
+<IDENTIFIER, count>
+<PUNCTUATOR, =>
+<IDENTIFIER, count>
+<PUNCTUATOR, +>
+<INTEGER_CONSTANT, 1>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+<KEYWORD, end>
+<COMMENT, //...>
+<IDENTIFIER, percentage>
+<PUNCTUATOR, =>
+<PUNCTUATOR, (>
+<IDENTIFIER, count>
+<PUNCTUATOR, *>
+<FLOATING_CONSTANT, 100.0>
+<PUNCTUATOR, )>
+<PUNCTUATOR, />
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<STRING_LITERAL, "\nStatistics:\n">
+<PUNCTUATOR, ;>
+<STRING_LITERAL, "Total numbers checked: ">
+<PUNCTUATOR, ;>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, =>
+<IDENTIFIER, maxNumber>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<STRING_LITERAL, "\nPrime numbers found: ">
+<PUNCTUATOR, ;>
+<IDENTIFIER, count>
+<PUNCTUATOR, =>
+<IDENTIFIER, count>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<STRING_LITERAL, "\nPercentage of primes: ">
+<PUNCTUATOR, ;>
+<IDENTIFIER, percentage>
+<PUNCTUATOR, =>
+<IDENTIFIER, percentage>
+<PUNCTUATOR, ;>
+<COMMENT, //...>
+<KEYWORD, return>
+<INTEGER_CONSTANT, 0>
+<PUNCTUATOR, ;>
+<KEYWORD, end>
+
+----- SYMBOL TABLE -----
+No.  | Lexeme               | Token Type     
+---------------------------------------------
+1    | "\nPercentage of primes: " | STRING_LITERAL 
+2    | "\nPrime numbers found: " | STRING_LITERAL 
+3    | "Total numbers checked: " | STRING_LITERAL 
+4    | "\nStatistics:\n"    | STRING_LITERAL 
+5    | /                    | PUNCTUATOR     
+6    | 100.0                | FLOATING_CONSTANT
+7    | "==================\n" | STRING_LITERAL 
+8    | "Prime Number Finder\n" | STRING_LITERAL 
+9    | ','                  | CHAR_CONSTANT  
+10   | 0.0                  | FLOATING_CONSTANT
+11   | separator            | IDENTIFIER     
+12   | percentage           | IDENTIFIER     
+13   | count                | IDENTIFIER     
+14   | 50                   | INTEGER_CONSTANT
+15   | maxNumber            | IDENTIFIER     
+16   | main                 | IDENTIFIER     
+17   | temp                 | IDENTIFIER     
+18   | ++                   | PUNCTUATOR     
+19   | num                  | IDENTIFIER     
+20   | "Prime numbers up to: " | STRING_LITERAL 
+21   | limit                | IDENTIFIER     
+22   | printPrimes          | IDENTIFIER     
+23   | 6                    | INTEGER_CONSTANT
+24   | +                    | PUNCTUATOR     
+25   | *                    | PUNCTUATOR     
+26   | 5                    | INTEGER_CONSTANT
+27   | =                    | PUNCTUATOR     
+28   | i                    | IDENTIFIER     
+29   | ||                   | PUNCTUATOR     
+30   | ==                   | PUNCTUATOR     
+31   | 2                    | INTEGER_CONSTANT
+32   | %                    | PUNCTUATOR     
+33   | 3                    | INTEGER_CONSTANT
+34   | ;                    | PUNCTUATOR     
+35   | 0                    | INTEGER_CONSTANT
+36   | 1                    | INTEGER_CONSTANT
+37   | <=                   | PUNCTUATOR     
+38   | )                    | PUNCTUATOR     
+39   | n                    | IDENTIFIER     
+40   | (                    | PUNCTUATOR     
+41   | isPrime              | IDENTIFIER     
